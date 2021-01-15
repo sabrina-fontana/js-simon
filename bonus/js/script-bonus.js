@@ -8,17 +8,20 @@ function randomNumber(min, max) {
   return result;
 }
 
-// function chiediNumero() {
-//   for (x = 0; x < 5; x++) {
-//     numeroScelto = parseInt(prompt('Inserisci i numeri che hai visto, uno alla volta'));
-//     if (isNaN(numeroScelto)) {
-//       alert('Inserisci un valore corretto');
-//     } else {
-//     numeriUtente.push(numeroScelto);
-//     console.log(numeroScelto);
-//     }
-//   }
-// }
+function chiediNumero() {
+  $('.wait').removeClass('active');
+  $('.input-numbers').addClass('active');
+
+  // for (x = 0; x < 5; x++) {
+  //   // numeroScelto = parseInt(prompt('Inserisci i numeri che hai visto, uno alla volta'));
+  //   // if (isNaN(numeroScelto)) {
+  //   //   alert('Inserisci un valore corretto');
+  //   // } else {
+  //   // numeriUtente.push(numeroScelto);
+  //   // console.log(numeroScelto);
+  //   }
+  // }
+}
 //
 // function risultato() {
 //   for (var x = 0; x < numeriComputer.length; x++) {
@@ -51,8 +54,12 @@ console.log(numeriComputer);
 $('.random-numbers').text(numeriComputer);
 
 // dopo 30 secondi chiedo all'utente di riscrivere i numeri
-setTimeout(chiediNumero, 30000);
+$('.conferma').click(function() {
+  $('.start-game').hide();
+  $('.wait').addClass('active');
+  setTimeout(chiediNumero, 3000);
+});
 
 // confronto numeriComputer e numeriUtente e dò il risultato
 // deve essere dopo 30 secondi altrimenti non conosco i numeri scelti dall'utente
-setTimeout(risultato, 30000);
+// setTimeout(risultato, 30000);
