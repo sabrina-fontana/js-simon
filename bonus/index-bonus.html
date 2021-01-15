@@ -10,7 +10,7 @@
   <body>
 
     <div class="start-game">
-      <h1>Simon says...</h1>
+      <div class="title">Simon says...</div>
       <div class="">memorizza questi numeri</div>
       <div class="random-numbers"></div>
       <div class="conferma">Fatto?</div>
@@ -21,14 +21,22 @@
     <div class="input-numbers">
       Inserisci i numeri che hai visto prima
       <div>
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
+        <input class="input-1" type="text">
+        <input class="input-2" type="text">
+        <input class="input-3" type="text">
+        <input class="input-4" type="text">
+        <input class="input-5" type="text">
       </div>
+      <div class="conferma">Conferma</div>
     </div>
 
+    <div class="result">
+      <h1>Il tuo risulato è...</h1>
+      <div class="title"></div>
+      <div class="user-numbers">I numeri che hai scritto: </div>
+      <div class="computer-numbers">I numeri da ricordare: </div>
+      <div class="conferma" onclick="window.location.reload();">Vuoi giocare ancora?</div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script-bonus.js" charset="utf-8"></script>

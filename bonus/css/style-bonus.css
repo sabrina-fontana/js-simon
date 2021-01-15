@@ -19,8 +19,13 @@ body {
   align-items: center;
 }
 
-.start-game div, .input-numbers {
+.start-game, .input-numbers, .result {
   font-size: 28px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .conferma {
@@ -62,4 +67,17 @@ input {
   width: 50px;
   height: 40px;
   margin: 10px;
+}
+
+.result {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result.active {
+  display: flex;
 }
