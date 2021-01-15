@@ -49,8 +49,8 @@ console.log(numeriComputer);
 alert('Simon says...\n' + numeriComputer + '\nMemorizza questi numeri');
 
 // dopo 30 secondi chiedo all'utente di riscrivere i numeri
-setTimeout(chiediNumero, 3000);
+setTimeout(chiediNumero, 30000);
 
 // confronto numeriComputer e numeriUtente e dò il risultato
 // deve essere dopo 30 secondi altrimenti non conosco i numeri scelti dall'utente
-setTimeout(risultato, 3000);
+setTimeout(risultato, 30000);
