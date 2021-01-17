@@ -10,9 +10,12 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-.start-game {
+.whole-page {
   width: 100vw;
   height: 100vh;
+}
+
+.start-game {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +34,7 @@ body {
 .conferma {
   color: white;
   padding: 5px 8px;
-  margin-top: 10px;
+  margin-top: 15px;
   border-radius: 5px;
   background-color: #960124;
   cursor: pointer;
@@ -40,10 +43,8 @@ body {
 .wait {
   justify-content: center;
   align-items: center;
-  font-size: 80px;
+  font-size: 100px;
   display: none;
-  width: 100vw;
-  height: 100vh;
 }
 
 .wait.active {
@@ -52,8 +53,6 @@ body {
 
 .input-numbers {
   display: none;
-  width: 100vw;
-  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -63,16 +62,31 @@ body {
   display: flex;
 }
 
+.warning {
+  display: none;
+  color: white;
+  background-color: #960124;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
 input {
   width: 50px;
   height: 40px;
   margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: #960124;
+  font-family: 'Nunito', sans-serif;
+}
+
+input:focus {
+  outline-color: #960124;
 }
 
 .result {
   display: none;
-  width: 100vw;
-  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;

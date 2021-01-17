@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style-bonus.css">
@@ -9,16 +10,16 @@
   </head>
   <body>
 
-    <div class="start-game">
+    <div class="start-game whole-page">
       <div class="title">Simon says...</div>
       <div class="">memorizza questi numeri</div>
       <div class="random-numbers"></div>
       <div class="conferma">Fatto?</div>
     </div>
 
-    <div class="wait">...</div>
+    <div class="wait whole-page"></div>
 
-    <div class="input-numbers">
+    <div class="input-numbers whole-page">
       Inserisci i numeri che hai visto prima
       <div>
         <input class="input-1" type="text">
@@ -27,11 +28,12 @@
         <input class="input-4" type="text">
         <input class="input-5" type="text">
       </div>
+      <div class="warning"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Devi inserire un numero!</div>
       <div class="conferma">Conferma</div>
     </div>
 
-    <div class="result">
-      <h1>Il tuo risulato è...</h1>
+    <div class="result whole-page">
+      <h2>Il tuo risulato è...</h2>
       <div class="title"></div>
       <div class="user-numbers">I numeri che hai scritto: </div>
       <div class="computer-numbers">I numeri da ricordare: </div>
